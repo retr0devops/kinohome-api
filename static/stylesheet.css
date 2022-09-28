@@ -1,0 +1,102 @@
+:root {
+    --accent-color: #EB5F00;
+    --text-light-color: #838383;
+    --text-dark-color: #FEFEFE;
+    --container-color: #838383;
+    --container-accent-color: #111;
+    --background-color: #111;
+    --background-accent-color: #838383;
+}
+
+html {
+    background: linear-gradient(to top left, var(--background-color), var(--background-accent-color));
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    color: var(--text-light-color);
+    font-family: 'SF UI Display';
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+    width: 100vw;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.wrapper .center {
+    position: absolute;
+    text-align: center;
+    margin: 30vh auto;
+}
+
+.logo {
+    font-size: calc((10vh + 10vw) / 2);
+    transition: .15s;
+    word-wrap: break-word;
+    font-family: 'SF UI Display';
+    font-weight: 600;
+	font-style: normal;
+}
+
+.description {
+    font-size: calc((2.5vh + 2.5vw) / 2);
+    transition: .15s;
+    word-wrap: break-word;
+    font-family: 'SF UI Text';
+    font-weight: 600;
+	font-style: normal;
+}
+
+.description p {
+    margin-top: 5px;
+}
+
+.buttons {
+    font-size: calc((2.5vh + 0.625vw) / 2);
+    transition: .15s;
+    word-wrap: break-word;
+    font-family: 'SF UI Text';
+	font-style: normal;
+	margin-top: 2.5em;
+}
+
+.button {
+    color: var(--text-dark-color);
+    min-width: 5vw;
+    background: var(--container-color);
+    padding: 7.5px 10px;
+    border: 3px transparent solid;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgb(0 0 0 / 25%);
+    transition: .5s;
+}
+
+
+.button:hover {
+    padding: 7.5px 25px;
+    background: var(--container-accent-color);
+    box-shadow: 0 0 50px var(--accent-color);
+    cursor: pointer;
+}
+
+.accent-text {
+    color: var(--accent-color);
+}
+
+.light-text {
+    color: var(--text-light-color);
+}
+
+.dark-text {
+    color: var(--text-dark-color);
+}

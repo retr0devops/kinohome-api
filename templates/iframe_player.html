@@ -1,0 +1,17 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+  <title>{{ name }} ({{ year }})</title>
+</head>
+<body oncontextmenu="return false;" bgcolor="black" style="height: 100%; width: 100%; overflow: hidden; position: fixed; margin: 0; padding: 0;">
+  <script>
+    window.addEventListener("message", function (event) {
+      if (event.data.api) {
+        document.getElementById("player").contentWindow.postMessage(event.data, "*");
+      }
+    });
+  </script>
+  <iframe id="player" src="https://v1615476316.bazon.site/kp/{{ id }}" frameborder="0" scrolling="no" allowfullscreen="" referrerpolicy="origin" width="100%" height="100%"></iframe>
+</body>
+</html>
